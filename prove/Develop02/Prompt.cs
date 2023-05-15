@@ -1,15 +1,13 @@
 public class Prompt
 {
 
-    List<string> _prompts;
-
-    public Prompt()
-    {
-        _prompts.Add("How was your day?");
-    }
-
+    string[] prompts = {"How was your day?","What did you think about today?","Did you do anything fun today?"};
+    Random rnd = new Random();
+    int promptInt =  rnd.Next(prompts.Length);
+    
     public string GetRandomPromt()
     {
+        
         return "This is a prompt";
     }
 }
